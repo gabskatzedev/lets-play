@@ -1,0 +1,21 @@
+<div>
+    <h1>Tic Tac Toe</h1>
+    <button routerLink='/tic-tac-toe' class="btn btn-primary">Start</button>
+    <table>
+        <tr>
+        <td (click) = "switchValue(0)">{{values[0]}}</td>
+        <td (click) = "switchValue(1)" class="vertical">{{values[1]}}</td>
+        <td (click) = "switchValue(2)">{{values[2]}}</td>
+        </tr>
+        <tr>
+        <td (click) = "switchValue(3)" class="horizontal">{{values[3]}}</td>
+        <td (click) = "switchValue(4)" class="vertical horizontal">{{values[4]}}</td>
+        <td (click) = "switchValue(5)" class="horizontal">{{values[5]}}</td>
+        </tr>
+        <tr>
+        <td (click) = "switchValue(6)">{{values[6]}}</td>
+        <td (click) = "switchValue(7)" class="vertical">{{values[7]}}</td>
+        <td (click) = "switchValue(8)" >{{values[8]}}</td>
+        </tr>
+    </table>
+</div>
