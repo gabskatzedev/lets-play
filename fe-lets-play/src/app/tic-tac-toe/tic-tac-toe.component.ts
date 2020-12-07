@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-tic-tac-toe',
@@ -35,9 +35,9 @@ export class TicTacToeComponent implements OnInit, OnChanges {
     this.currentValue = "X";
   }
 
-  ngOnChanges(){
+  ngOnChanges(changes: SimpleChanges){
     console.log("ngOnChanges");
-    
+    //const newChange = SimpleChange = changes.
   }
   
 }
