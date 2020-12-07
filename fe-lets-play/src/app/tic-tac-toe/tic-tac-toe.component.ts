@@ -30,8 +30,13 @@ export class TicTacToeComponent implements OnInit {
     }
   }
 
+  start(){
+    this.values =  ["", "", "", "", "", "", "", "", ""];
+  }
+
   ngOnChanges(){
     console.log("ngOnChanges");
     //this.switchValue();
   }
+  
 }

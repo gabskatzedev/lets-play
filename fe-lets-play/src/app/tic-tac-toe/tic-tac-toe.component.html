@@ -1,6 +1,6 @@
 <div>
     <h1>Tic Tac Toe</h1>
-    <button routerLink='/tic-tac-toe' class="btn btn-primary">Start</button>
+    <button (click) = "start()" class="btn btn-primary">Start</button>
     <table>
         <tr>
         <td (click) = "switchValue(0)">{{values[0]}}</td>
