@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-tic-tac-toe',
   templateUrl: './tic-tac-toe.component.html',
   styleUrls: ['./tic-tac-toe.component.css']
 })
-export class TicTacToeComponent implements OnInit {
+export class TicTacToeComponent implements OnInit, OnChanges {
 
   public values: string[] = ["", "", "", "", "", "", "", "", ""];
   private currentValue: string = "X";
@@ -32,11 +32,12 @@ export class TicTacToeComponent implements OnInit {
 
   start(){
     this.values =  ["", "", "", "", "", "", "", "", ""];
+    this.currentValue = "X";
   }
 
   ngOnChanges(){
     console.log("ngOnChanges");
-    //this.switchValue();
+    
   }
   
 }

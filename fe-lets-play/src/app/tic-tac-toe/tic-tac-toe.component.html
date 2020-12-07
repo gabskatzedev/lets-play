@@ -1,6 +1,12 @@
 <div>
-    <h1>Tic Tac Toe</h1>
-    <button (click) = "start()" class="btn btn-primary">Start</button>
+    <div class="centered">
+        <h1>Tic Tac Toe</h1>
+        
+    </div>
+    <div class="centered">
+        <button (click) = "start()" class="btn btn-info">Restart</button>
+    </div>
+   <div>
     <table>
         <tr>
         <td (click) = "switchValue(0)">{{values[0]}}</td>
@@ -18,4 +24,6 @@
         <td (click) = "switchValue(8)" >{{values[8]}}</td>
         </tr>
     </table>
+   </div>
+    
 </div>

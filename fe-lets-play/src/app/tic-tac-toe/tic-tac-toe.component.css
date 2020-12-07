@@ -1,10 +1,9 @@
-h1 {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-button {
-    text-align: center;
+
+.centered {
+    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   td {
     width: 200px;
@@ -31,6 +30,7 @@ button {
 
   table {
     margin: 5px auto;
+    
   }
   .vertical {
     border-left: 5px solid black;
